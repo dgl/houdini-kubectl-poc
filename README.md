@@ -66,6 +66,10 @@ terminal vulnerability to have any effect though. Some examples are:
 
   `"\e]9;9;/" calc.exe "o /\e\\"`
 
+- Some colour (not a terminal vulnerability, test for CVE-2021-25743 alone)
+
+  `"\e[31mIf you see this in red your kubectl is not fixed against CVE-2021-25743\e[m"`
+
 The list above contains escape sequences in C-style strings, as this section of
 the readme is expanded and written to /dev/termination-log, see
 [Dockerfile](Dockerfile).
