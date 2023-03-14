@@ -39,7 +39,7 @@ pods in, simply:
 ```
 kubectl run --image=davidgl/houdini-kubectl-poc kubectl-poc
 sleep 10  # or however long the cluster take to schedule the pod
-kubectl describe kubectl-poc
+kubectl describe pod/kubectl-poc
 ```
 
 The pod deliberately crashes. Manual cleanup is needed; delete the
